@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.sub_dropdown
+{
+   
+    display: none;
+
+}
+.list_section:hover .sub_dropdown{
+     display: block;
+    gap: 2px;
+    background-color: rgb(61, 172, 172);
+    height: 120px;
+    width: 100px; 
+    margin-left: 200px;
+    position: absolute;
+    
+
+
+
+}
