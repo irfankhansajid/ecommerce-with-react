@@ -1,25 +1,42 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.sub_dropdown
-{
-   
-    display: none;
 
+.list_section {
+  position: relative; /* Ensure relative positioning for absolute positioning of dropdown */
 }
-.list_section:hover .sub_dropdown{
-     display: block;
-    gap: 2px;
-    background-color: rgb(61, 172, 172);
-    height: 120px;
-    width: 100px; 
-    margin-left: 200px;
-    position: absolute;
-    
 
+.sub_dropdown {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: calc(100% + 10px); /* Position the dropdown to the right of the list item */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
+.list_section:hover .sub_dropdown {
+  display: block;
+}
 
+.sub_list {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+/* Right arrow styling */
+.arrow {
+  position: absolute;
+  top: 50%;
+  right: -50px; /* Adjust the position of the arrow */
+  transform: translateY(-50%);
+  font-size: 1em;
+}
+
+.dropdown_link {
+  position: relative;
 }
