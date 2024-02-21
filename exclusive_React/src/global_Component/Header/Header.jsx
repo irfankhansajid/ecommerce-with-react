@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import  './Header.css'
 
@@ -10,9 +10,9 @@ const [currentImage, setCurrentImage] = useState(0);
 const images = [
   "https://e-commerce-pied-xi.vercel.app/_next/image?url=%2Fimages%2Fhome%2Fbanner.webp&w=1920&q=75",
   "https://e-commerce-pied-xi.vercel.app/_next/image?url=%2Fimages%2Fhome%2Fbanner.webp&w=1920&q=75",
-  "https://e-commerce-pied-xi.vercel.app/_next/image?url=%2Fimages%2Fhome%2Fbanner.webp&w=1920&q=75",
-  '../../assets/banner.webp'
+  "https://e-commerce-pied-xi.vercel.app/_next/image?url=%2Fimages%2Fhome%2Fbanner.webp&w=1920&q=75"
 ];
+
 
 const nextImage = () => {
   setCurrentImage((prevImage) =>
@@ -20,11 +20,13 @@ const nextImage = () => {
   );
 };
 
+
 const prevImage = () => {
   setCurrentImage((prevImage) =>
     prevImage === 0 ? images.length - 1 : prevImage - 1,
   );
 };
+
 
 
   return (
