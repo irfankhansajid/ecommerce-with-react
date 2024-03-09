@@ -6,10 +6,13 @@ import { productData } from './ProductContent'
 import { responsive } from '../../JS File/Carousel'
 
 
-
 const FlashSale = () => {
 
+   
+
   const carouselRef = useRef(null);
+
+
 
     const handlePrevious = () => {
       if (carouselRef.current) {
@@ -23,7 +26,7 @@ const FlashSale = () => {
       }
     };
 
-
+    
 
 
   const calculateTimeLeft = () => {
@@ -107,14 +110,15 @@ const FlashSale = () => {
           <div className="flex space-x-2">
             <button
               className=" bg-red-500 hover:bg-red-600 ml-96 text-white font-bold px-6 rounded focus:outline-none"
-              onClick={handlePrevious}>
-              &#10094;    
+              onClick={handlePrevious}
+            >
+              &#10094;
             </button>
             <button
               className=" bg-red-500 hover:bg-red-600 text-white font-bold px-6 rounded focus:outline-none"
               onClick={handleNext}
             >
-               &#10095;
+              &#10095;
             </button>
           </div>
         </div>
@@ -139,7 +143,7 @@ const FlashSale = () => {
       </div>
 
       <div className="text-center">
-        <button className="border border-red-500 bg-red-500 text-white text-lg px-9 py-2 rounded-sm font-semibold">
+        <button className="border border-red-500 bg-red-500 text-white text-lg px-9 py-2 rounded-sm font-semibold hover:scale-110 transition duration-300 ease-in-out hover:bg-red-700">
           View All Product
         </button>
       </div>

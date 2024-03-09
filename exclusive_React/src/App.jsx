@@ -1,5 +1,6 @@
 
 import './App.css'
+import Catagory from './global_Component/Catagory/Catagory'
 import FlashSale from './global_Component/FlashSale/FlashSale'
 import Header from './global_Component/Header/Header'
 import Navbar from './global_Component/Header/Navbar'
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Header />
       <FlashSale />
+      <Catagory />
     </>
   )
 }

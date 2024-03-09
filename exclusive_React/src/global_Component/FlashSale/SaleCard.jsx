@@ -4,8 +4,8 @@ const SaleCard = ({product}) => {
 
   return (
     <div className="mx-28 my-20">
-      <div className="overflow-hidden w-64">
-        <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-gray-100">
+      <div className="w-64">
+        <div className="rounded-2xl shadow-sm">
           <div className="text-white bg-red-500 text-lg font-semibold p-1 m-3 border border-red-500 rounded-lg w-14">
             {product.percent}
           </div>
